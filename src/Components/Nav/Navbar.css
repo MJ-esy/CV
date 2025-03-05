@@ -1,0 +1,100 @@
+header{
+    display: flex;
+    padding: 2rem;
+    background-color: #876EB8;
+    border: 5px black solid;
+}
+
+nav{
+    margin:auto;
+}
+
+.logo{
+    text-decoration: none;
+    color: #110F31;
+    margin: auto;
+    height: 2rem;
+
+}
+
+#nav-toggle{
+    display: none;
+}
+
+.toggle-input{
+    display: none;
+    z-index: 1;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+
+@media(max-width:500px) {
+    .toggle-input {
+        display: block;
+        margin: auto;
+    }
+  
+    header nav ul {
+        display: none;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+    }
+  
+    header nav li {
+        padding-top: 2rem;
+    }
+  
+    .open {
+        display: block;
+        position: fixed;
+        background-color: #876EB8;
+        z-index: 1;
+    }
+  }
+  
+nav a{
+    text-decoration: none;
+    color:#658596;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav a:hover{
+    color: #8DCFB5;
+    font-size: 1.1em;
+}
+
+nav a.active{
+    font-size: larger;
+    color: hsl(244, 54%, 20%);
+    text-decoration: underline;
+}
+
+nav a.active:hover{
+    color: #8DCFB5;
+    font-size: 1.1em;
+    text-decoration: wavy;
+}
+
+.logo:hover{
+
+    color: #8DCFB5;
+    font-size: 1.5em;
+    text-decoration: wavy;
+
+}

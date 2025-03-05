@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main {
+  background-color: hsl(244, 73%, 13%);
+  color: #f0ffff;
+  padding:2rem;
+}
+
+p:last-child{
+  margin-bottom: 0;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+body{
+  min-height: 100vh;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Project-page */
+.project-section{
+  align-items: center;
+  justify-items: center;
+}
+
+div.card{
+  margin:3rem;
+}
+
+p.card-text{
+  padding:0 2rem 0 2rem;
+}
+

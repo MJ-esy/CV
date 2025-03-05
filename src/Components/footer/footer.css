@@ -1,0 +1,38 @@
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    background-color: hsl(244, 73%, 13%);
+}
+
+footer div{
+    text-align: center;
+}
+
+.footer-text{
+   color: #f0ffff;
+}
+
+.icons{
+    text-decoration: none;
+    color:#876EB8;
+    padding: 1em;
+}
+
+a.icons:hover i{
+    color: #8DCFB5;
+    animation: icon-bounce 1s;
+}
+
+@keyframes icon-bounce{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}

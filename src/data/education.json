@@ -1,0 +1,38 @@
+    [
+    {
+        "Course":"Fullstack .NET Developer",
+        "School":"Chas Academy",
+        "Duration":"2024-2026",
+        "Info":"C#, SQL, JavaScript, HTML, CSS, React"
+    },
+    
+    {
+        "Course":"Prosthetic and Orthotics",
+        "School":"Jönköping University",
+        "Duration":"2019-2022",
+        "Info":"Biomechanics, Prosthetic, Orthotics"
+    },
+    
+    {
+        "Course":"Komvux",
+        "School":"Distance",
+        "Duration":" ",
+        "Info":"Physics 2, Programming 1, Swedish as a second language"
+    },
+    
+    {
+        "Course":"International Baccalaureate",
+        "School":"S:t Eskils Gymnasium",
+        "Duration":"2015-2018",
+        "Info":"Studied Chemistry HL, Biology HL, Mathematics HL, Economics SL, English A SL, Swedish B SL & Theory of Knowledge"
+    },
+    
+
+    {
+        "Course":"Introduction Programme",
+        "School":"Prins Wilhem Gymnasium",
+        "Duration":"2014 -2015",
+        "Info":"Focused on Swedish language"
+    }
+]
+ 
