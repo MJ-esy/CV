@@ -49,7 +49,7 @@ export default function Projects() {
                         const formattedDate = new Date(project.created_at).toISOString().split('T')[0];
                         return (
                             <Card style={{ width: '18rem' }} key={project.name}>
-                                <Card.Img variant="top" src="src\assets\pietro-jeng-n6B49lTx7NM-unsplash.jpg" alt="Textured pattern green and red" />
+                                <Card.Img variant="top" src={require("src\assets\pietro-jeng-n6B49lTx7NM-unsplash.jpg")} alt="Textured pattern green and red" />
                                 <Card.Body>
                                     <Card.Title>
                                         {project.name}
