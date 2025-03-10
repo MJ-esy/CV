@@ -65,6 +65,10 @@ ul li {
   font-style: italic;
 }
 
+.Self-intro img{
+  height: 350px;
+}
+
 /* About Me */
 .p-about-me {
   text-align: left;
@@ -75,7 +79,9 @@ ul li {
 
 /* Contact */
 .Contact img {
-  border-radius: 100px;
+  border-radius: 3rem;
+  height: 450px;
+
 }
 
 @media(max-width:700px) {

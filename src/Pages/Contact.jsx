@@ -6,7 +6,7 @@ export default function Contact() {
 
         <>
             <main className="Contact">
-                <img src={ContactPic} alt="birds in a row" height={450} />
+                <img src={ContactPic} alt="birds in a row" />
 
                 <div className="p-contact">
                     <p>Looking to collaborate or share ideas?</p>
