@@ -1,20 +1,20 @@
 
 
-export default function Home(){
+export default function Home() {
 
-    return(
-        
+    return (
+
         <>
-        <main>
-            <h1>MJ's CV</h1>
-                <h2>Welcome to my CV</h2>
+            <main>
+                <h1>Welcome to MJ's CV</h1>
                 <ul className="Self-intro">
-                    <li>I am MJ</li>
+                    <img src="public\Profile pic.jpg" alt="profile picture of MJ" height={350} />
+                    <li className="h-intro">I am MJ</li>
                     <li>studying 🌱Fullstack C#/.NET</li>
                     <li>From Malaysia, Residing in Sweden</li>
                 </ul>
-         
-        </main>           
+
+            </main>
         </>
 
     )

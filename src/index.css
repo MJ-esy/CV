@@ -1,47 +1,113 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 main {
   background-color: hsl(244, 73%, 13%);
   color: #f0ffff;
-  padding:2rem;
+  padding: 2rem;
+  min-height: 70vh;
+  padding: 3rem;
+  text-align: center;
 }
 
-p:last-child{
+p:last-child {
   margin-bottom: 0;
 }
 
-h1{
+h1 {
   text-align: center;
   padding-bottom: 2rem;
+  text-decoration: underline;
 }
 
-body{
-  min-height: 100vh;
-}
 
-#root {
-  height: 100%;
-  width: 100%;
-  min-height: 100vh;
+
+.logo h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
 }
 
 /* Project-page */
-.project-section{
+.project-section {
   align-items: center;
   justify-items: center;
+  padding-top: 1.5rem;
 }
 
-div.card{
-  margin:3rem;
+div.card {
+  margin: 3rem;
+  background-color: rgb(204, 212, 227);
+  text-align: center;
 }
 
-p.card-text{
-  padding:0 2rem 0 2rem;
+p.card-text {
+  padding: 0 3rem;
+  text-align: left;
 }
 
+/* Home-page */
+ul li {
+  list-style: none;
+  font-size: larger;
+}
+
+.Self-intro {
+  margin-top: 3rem;
+  padding-right: 32px;
+}
+
+.h-intro {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+/* About Me */
+.p-about-me {
+  text-align: left;
+  padding: 6rem;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+/* Contact */
+.Contact img {
+  border-radius: 100px;
+}
+
+@media(max-width:700px) {
+  .Contact img {
+    width: 60vw;
+    object-fit: cover;
+    overflow-x: hidden;
+  }
+}
+
+.p-contact {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  padding-bottom: -2rem;
+
+}
+
+/* Resume */
+.p-2{
+  margin: 2rem;
+}
+
+.p-2 h2{
+  border: solid 2px rgb(145, 63, 145);
+}
+
+.skills li{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding-right: 32px;
+}
+
+.p-2 p{
+  padding: 0 3rem;
+}

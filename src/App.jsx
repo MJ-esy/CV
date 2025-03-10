@@ -7,9 +7,9 @@ import About from './Pages/About'
 import Contact from './Pages/Contact'
 import Home from './Pages/Home'
 import Resume from './Pages/Resume'
+import NotFound from './Pages/404.jsx'
 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 
 function App() {
 
@@ -23,6 +23,7 @@ function App() {
           <Route path="/projects" element={<Projects/>}></Route>
           <Route path="/resume" element={<Resume/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="*" element={<NotFound/>}></Route>
         </Routes>
         <Footer/>
       </BrowserRouter>

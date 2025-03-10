@@ -1,37 +1,38 @@
-header{
+header {
     display: flex;
     padding: 2rem;
     background-color: #876EB8;
     border: 5px black solid;
 }
 
-nav{
-    margin:auto;
+nav {
+    margin: auto;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     color: #110F31;
     margin: auto;
     height: 2rem;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
-#nav-toggle{
+#nav-toggle {
     display: none;
 }
 
-.toggle-input{
+.toggle-input {
     display: none;
     z-index: 1;
 }
 
-header nav ul{
+header nav ul {
     list-style: none;
     display: flex;
 }
 
-header nav ul li a{
+header nav ul li a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -40,12 +41,12 @@ header nav ul li a{
     padding: 0.5rem;
 }
 
-@media(max-width:500px) {
+@media(max-width:700px) {
     .toggle-input {
         display: block;
         margin: auto;
     }
-  
+
     header nav ul {
         display: none;
         height: 100%;
@@ -54,44 +55,44 @@ header nav ul li a{
         top: 0;
         text-align: center;
     }
-  
+
     header nav li {
         padding-top: 2rem;
     }
-  
+
     .open {
         display: block;
         position: fixed;
         background-color: #876EB8;
         z-index: 1;
     }
-  }
-  
-nav a{
+}
+
+nav a {
     text-decoration: none;
-    color:#658596;
+    color: #658596;
     font-weight: bold;
     transition-duration: 0.3s;
 }
 
-nav a:hover{
+nav a:hover {
     color: #8DCFB5;
     font-size: 1.1em;
 }
 
-nav a.active{
+nav a.active {
     font-size: larger;
     color: hsl(244, 54%, 20%);
     text-decoration: underline;
 }
 
-nav a.active:hover{
+nav a.active:hover {
     color: #8DCFB5;
     font-size: 1.1em;
     text-decoration: wavy;
 }
 
-.logo:hover{
+.logo:hover {
 
     color: #8DCFB5;
     font-size: 1.5em;
