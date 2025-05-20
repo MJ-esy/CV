@@ -24,10 +24,51 @@ h1 {
   text-decoration: underline;
 }
 
+@media (max-width: 700px) {
+  main {
+    min-height: 80vh;
+    padding: 2rem;
+  }
 
+  /* Home */
+  .Self-intro img {
+    height: 300px;
+  }
+
+  ul li {
+    list-style: none;
+    font-size: medium;
+  }
+
+  .Self-intro {
+    margin-top: 1rem;
+    padding-right: 32px;
+  }
+
+  /* Resume */
+  .p-2 {
+    margin: 0;
+  }
+
+  .p-2 div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .skills li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding-right: 32px;
+  }
+
+  .p-2 p {
+    padding-left: -3.5rem;
+    text-align: left;
+  }
+}
 
 .logo h2 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 600;
 }
 
@@ -36,6 +77,8 @@ h1 {
   align-items: center;
   justify-items: center;
   padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(minmax(600px, 1fr));
 }
 
 div.card {
@@ -65,7 +108,7 @@ ul li {
   font-style: italic;
 }
 
-.Self-intro img{
+.Self-intro img {
   height: 350px;
 }
 
@@ -81,10 +124,9 @@ ul li {
 .Contact img {
   border-radius: 3rem;
   height: 450px;
-
 }
 
-@media(max-width:700px) {
+@media (max-width: 700px) {
   .Contact img {
     width: 60vw;
     object-fit: cover;
@@ -96,24 +138,23 @@ ul li {
   padding: 1.5rem;
   font-size: 1.5rem;
   padding-bottom: -2rem;
-
 }
 
 /* Resume */
-.p-2{
+.p-2 {
   margin: 2rem;
 }
 
-.p-2 h2{
+.p-2 h2 {
   border: solid 2px rgb(145, 63, 145);
 }
 
-.skills li{
+.skills li {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   padding-right: 32px;
 }
 
-.p-2 p{
+.p-2 p {
   padding: 0 3rem;
 }
