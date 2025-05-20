@@ -78,7 +78,8 @@ h1 {
   justify-items: center;
   padding-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 div.card {
@@ -141,20 +142,21 @@ ul li {
 }
 
 /* Resume */
-.p-2 {
-  margin: 2rem;
+.p-resume {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.p-2 h2 {
-  border: solid 2px rgb(145, 63, 145);
+.p-r h2 {
+  padding: 2rem;
+  border: solid 3px rgb(145, 63, 145);
 }
 
-.skills li {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  padding-right: 32px;
+.p-r h5 {
+  text-shadow: 1px 1px 2px #f0ffff;
 }
 
-.p-2 p {
-  padding: 0 3rem;
+.p-r p {
+  padding: 0 1rem;
 }

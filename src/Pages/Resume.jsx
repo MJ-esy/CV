@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import Stack from "react-bootstrap/Stack";
 import education from "../data/education.json";
 import employments from "../data/employments.json";
 import language from "../data/language.json";
@@ -10,77 +8,70 @@ export default function Resume() {
       <main>
         <h1>My Resumé</h1>
         <div className="p-resume">
-          <Stack gap={4}>
-            <div className="p-2">
-              <h2>Employment</h2>
-              <br />
-              <br />
-              <ul className="employment">
-                {employments.map((employment, index) => {
-                  return (
-                    <li key={index}>
-                      <h4>{employment.Position}</h4>
-                      <h5>
-                        {employment.Company} @{employment.Duration}
-                      </h5>
-                      <p>{employment["Job-description"]}</p>
-                      <br />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div className="p-2">
-              <h2>Education</h2>
-              <br />
-              <br />
-              <ul className="education">
-                {education.map((education, index) => {
-                  return (
-                    <li key={index}>
-                      <h4>{education.Course}</h4>
-                      <h5>
-                        {education.School} <br />
-                        {education.Duration}
-                      </h5>
-                      <p>{education.Info}</p>
-                      <br />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div className="p-2">
-              <h2>Language</h2>
-              <br />
-              <br />
-              <ul className="language">
-                {language.map((language, index) => {
-                  return (
-                    <li key={index}>
-                      <h4>{language.language}</h4>
-                      <p>{language.proficiency}</p>
-                      <br />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-
-            <div className="p-2">
-              <h2>Skills</h2>
-              <br />
-              <br />
-              <ul className="skills">
+          <div className="p-r">
+            <h2>Employment</h2>
+            <p>
+              {employments.map((employment) => {
+                return (
+                  <div key={employment.id}>
+                    <h5>{employment.Position}</h5>
+                    <p>
+                      {employment.Company} @{employment.Duration}
+                      <br /> {employment["Job-description"]}
+                    </p>
+                    <br />
+                  </div>
+                );
+              })}
+            </p>
+          </div>
+          <div className="p-r">
+            <h2>Education</h2>
+            <p>
+              {education.map((education) => {
+                return (
+                  <div key={education.id}>
+                    <h5>{education.Course}</h5>
+                    <p>
+                      {education.School} @{education.Duration}
+                      <br /> {education.Info}
+                    </p>
+                    <br />
+                  </div>
+                );
+              })}
+            </p>
+          </div>
+          <div className="p-r">
+            <h2>Languages</h2>
+            <p>
+              {language.map((language) => {
+                return (
+                  <div key={language.id}>
+                    <h5>{language.language}</h5>
+                    <p>{language.proficiency}</p>
+                    <br />
+                  </div>
+                );
+              })}
+            </p>
+          </div>
+          <div className="p-r">
+            <h2>Other Skills</h2>
+            <p>
+              <ul>
                 <li>C#</li>
-                <li>.NET</li>
-                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>JavaScript</li>
                 <li>React</li>
-                <li>HTML & CSS</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>Notion</li>
+                <li>Git & GitHub & GitLab</li>
               </ul>
-            </div>
-          </Stack>
+            </p>
+          </div>
         </div>
       </main>
     </>
